@@ -546,9 +546,16 @@ class ToolkitNetworkMixin:
 
             new_save_dict = {}
             for key, value in save_dict.items():
+                # === [ORACLE-60] BLOCK: ЗАЩИТА ОТ МЫЛА ===
+                # Эти строки скипали Альфу для всех типов, кроме LoKR.
+                # Из-за этого при Ранге 1024 сигнал падал в 64 раза (Scale 16/1024).
+                # ОСТАВЛЯТЬ ВЫКЛЮЧЕННЫМИ, чтобы работал наш Автопилот в lora_special.py.
+                # =========================================
+                # if key.endswith('.alpha') and self.network_type.lower() != "lokr":
+                #     continue
                 # lokr needs alpha
-                if key.endswith('.alpha') and self.network_type.lower() != "lokr":
-                    continue
+                #if key.endswith('.alpha') and self.network_type.lower() != "lokr":
+                 #   continue
                 new_key = key
                 new_key = new_key.replace('lora_down', 'lora_A')
                 new_key = new_key.replace('lora_up', 'lora_B')

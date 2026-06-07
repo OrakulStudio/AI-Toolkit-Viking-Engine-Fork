@@ -908,8 +908,8 @@ class BaseSDTrainProcess(BaseTrainProcess):
     def load_additional_training_modules(self, params):
         # override in subclass
         return params
-
-    def get_sigmas(self, timesteps, n_dim=4, dtype=torch.float32):
+         # Викинг метод ранг 1024  
+    def get_sigmas(self, timesteps, n_dim=4, dtype=torch.float16):
         sigmas = self.sd.noise_scheduler.sigmas.to(device=self.device, dtype=dtype)
         schedule_timesteps = self.sd.noise_scheduler.timesteps.to(self.device)
         timesteps = timesteps.to(self.device)
@@ -920,8 +920,8 @@ class BaseSDTrainProcess(BaseTrainProcess):
         while len(sigma.shape) < n_dim:
             sigma = sigma.unsqueeze(-1)
         return sigma
-    
-    def get_optimal_noise(self, latents, dtype=torch.float32):
+         # Викинг метод ранг 1024 
+    def get_optimal_noise(self, latents, dtype=torch.float16):
         batch_num = latents.shape[0]
         chunks = torch.chunk(latents, batch_num, dim=0)
         noise_chunks = []
@@ -938,8 +938,8 @@ class BaseSDTrainProcess(BaseTrainProcess):
             noise_chunks.append(best_noise)
         noise = torch.cat(noise_chunks, dim=0)
         return noise
-    
-    def get_consistent_noise(self, latents, batch: 'DataLoaderBatchDTO', dtype=torch.float32):
+          # Викинг метод ранг 1024 
+    def get_consistent_noise(self, latents, batch: 'DataLoaderBatchDTO', dtype=torch.bfloat16):
         batch_num = latents.shape[0]
         chunks = torch.chunk(latents, batch_num, dim=0)
         noise_chunks = []
@@ -954,11 +954,14 @@ class BaseSDTrainProcess(BaseTrainProcess):
                 img_path += '_fy'
             seed = int(hashlib.md5(img_path.encode()).hexdigest(), 16) & 0xffffffff
             generator = torch.Generator("cpu").manual_seed(seed)
+            # Создаем шум и сразу отправляем его на девайс в bfloat16
             noise_chunk = torch.randn(chunk.shape, generator=generator).to(chunk.device, dtype=dtype)
             noise_chunks.append(noise_chunk)
+        
+        # Собираем чанки и гарантируем итоговый тип bfloat16
         noise = torch.cat(noise_chunks, dim=0).to(dtype=dtype)
         return noise
-            
+        # Викинг метод ранг 1024 
 
     def get_noise(
         self, 
@@ -1770,9 +1773,9 @@ class BaseSDTrainProcess(BaseTrainProcess):
                     **network_kwargs
                 )
 
-
+                # Викинг метод ранг 1024 
                 # todo switch everything to proper mixed precision like this
-                self.network.force_to(self.device_torch, dtype=torch.float32)
+                self.network.force_to(self.device_torch, dtype=torch.bfloat16)
                 # give network to sd so it can use it
                 self.sd.network = self.network
                 self.network._update_torch_multiplier()
