@@ -50,7 +50,7 @@ Also: CPU pinned memory for direct DMA from DRAM without CPU cache copy.
 
 ---
 
-### `toolkit/quantize.py` — Protocol Oracle-60
+### [toolkit/quantize.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/util/quantize.py) — Protocol Oracle-60
 **Native FP8 (E5M2) for Ada Lovelace + CPU pre-quantization.**
 
 RTX 4090 has native FP8 Tensor Cores. This activates them.  
