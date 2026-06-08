@@ -123,7 +123,7 @@ Also: Gram matrix calculation replaced with hardware `torch.bmm` (Batch Matrix M
 
 ---
 
-### `toolkit/timer.py` — Timer Silenced
+### [toolkit/timer.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/timer.py) — Timer Silenced
 **CPU overhead from time polling eliminated.**
 
 Original timer called `time.time()` on every micro-step of the pipeline — `predict_unet`, `backward`, `optimizer_step`, etc. Parasitic CPU load, log spam, potential micro-freeze points on PCIe bus under heavy load.
