@@ -103,7 +103,7 @@ Lines that skipped `.alpha` keys for non-LoKR networks are permanently commented
 
 ---
 
-### `toolkit/style.py` — Perceptual Loss (Rewritten)
+### [toolkit/style.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/style.py) — Perceptual Loss (Rewritten)
 **VGG19 perceptual loss without the VRAM leak.**
 
 Original had a critical bug: VGG19 was computing gradients for itself during perceptual loss calculation — wasting gigabytes of VRAM on a frozen reference network.
