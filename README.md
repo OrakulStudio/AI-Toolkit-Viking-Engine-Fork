@@ -145,7 +145,7 @@ Result: cleaner logs, lower CPU load, stable PCIe bus under sustained training.
 
 ---
 
-### `jobs/process/BaseSDTrainProcess.py` — bf16 Forcing
+### [jobs/process/BaseSDTrainProcess.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/jobs/process/BaseSDTrainProcess.py) — bf16 Forcing
 **Network forced to bfloat16 before training starts.**
 
 ```python
