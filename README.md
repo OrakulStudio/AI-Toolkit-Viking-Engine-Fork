@@ -68,7 +68,7 @@ CPU pre-quantizes transformer blocks before GPU load — PCIe bus freed.
 
 ---
 
-### `toolkit/lora_special.py` — Viking Override
+### [toolkit/lora_special.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/lora_special.py) — Viking Override
 **LoRA matrices born in bfloat16, not converted later.**
 
 ```python
@@ -89,7 +89,7 @@ self.scale = alpha_val / self.lora_dim
 
 ---
 
-### `toolkit/network_mixins.py` — Oracle-60 Alpha Fix
+### [toolkit/network_mixins.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/network_mixins.py) — Oracle-60 Alpha Fix
 **The alpha skip bug that corrupted high-rank training.**
 
 Lines that skipped `.alpha` keys for non-LoKR networks are permanently commented with explanation. The `lora_special.py` autopilot handles scale correctly now.
