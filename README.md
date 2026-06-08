@@ -260,10 +260,3 @@ All original commits preserved. Author credited. The original README can be foun
 *The smell of the iron is stable. 🦊⚡*
 
 *Chernihiv, Ukraine 🇺🇦 · Orakul Studio · 2026*
-
-🐙 **Original:** [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit)
-🐙 **This fork:** [github.com/OrakulStudio](https://github.com/OrakulStudio)
-
-[huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
-
-🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/orakul_storm)
