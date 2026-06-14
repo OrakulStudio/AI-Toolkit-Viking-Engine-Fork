@@ -28,7 +28,7 @@ This code was designed, rewritten, and optimized exclusively for directly runnin
 ### How to use the repository correctly:
 * Run strictly through the console, directly from your virtual environment.
 * If your process crashes while working with high ranks and dynamic alpha, **don't look for compromises in the code; instead, increase the system swap/pagefile**. The terminal works with your hardware without censorship or hidden precision reductions.
-[Here is the configuration file for running the training]()
+* [Here is the configuration file for running the training](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/viking_train/Test1280.yaml)
 
 ## What This Is
 
