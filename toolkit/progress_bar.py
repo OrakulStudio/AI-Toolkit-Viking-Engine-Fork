@@ -24,7 +24,6 @@ def get_gpu_stats():
 
 class ToolkitProgressBar(tqdm):
     def __init__(self, *args, **kwargs):
-        # Дёргаем функцию из твоего отдельного файла строго при создании этого бара!
         orakul_studio.print_banner()
         super().__init__(*args, **kwargs)
         self.paused = False
