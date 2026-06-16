@@ -255,6 +255,10 @@ python -m venv venv
 pip install --no-cache-dir torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128
 pip install -r requirements.txt
 
+If you encounter numpy.dtype errors or CUDA/Triton warnings, use the following commands to ensure your environment is set up correctly for high-performance training:
+
+Fix NumPy/SciPy version conflicts:
+pip install "numpy<2.0.0" scipy --force-reinstall
 ---
 
 Configs go in viking_train/ folder.
