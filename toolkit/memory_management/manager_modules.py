@@ -1,16 +1,18 @@
+# ==============================================================================
+# VIKING ENGINE: EXECUTABLE CONSOLE BANNER (ORAKUL STUDIO FORK)
+# ==============================================================================
 import sys
 
-# ==============================================================================
-# VIKING ENGINE: EXECUTABLE CONSOLE BANNER
-# ==============================================================================
 print("\n" + "="*78, file=sys.stderr)
-print("  ###  ###   ### #  # #  # #       ###  ### #  # ###  #  ### ", file=sys.stderr)
-print(" #   # #  # #  # # #  #  # #      #      #  #  # #  # # #   #", file=sys.stderr)
-print(" #   # ###  #### ##   #  # #       ##    #  #  # #  # # #   #", file=sys.stderr)
-print(" #   # #  # #  # # #  #  # #         #   #  #  # #  # # #   #", file=sys.stderr)
-print("  ###  #  # #  # #  #  ##  ###    ###    #   ##  ###  #  ### ", file=sys.stderr)
+print(r"""
+   ____  ____  ___     _  __ _   _ _       ____ _____ _   _ ____ ___ ___  
+  / __ \|  _ \/ _ \   / //_/| | | | |     / ___|_   _| | | |  _ \_ _/ _ \ 
+ / / _` | |_) | |_| | / ,<   | | | | |     \___ \ | | | | | | | | | | | | |
+| | (_| |  _ <|  _  |/ /| |  | |_| | |___   ___) || | | |_| | |_| | | |_| |
+ \ \__,_|_| \_\_| |_/_/ |_|   \___/|_____| |____/ |_|  \___/|____/___\___/ 
+  \____/                                                                  
+""", file=sys.stderr)
 print(" VIKING ENGINE: ASYNCHRONOUS MEMORY MANAGER ", file=sys.stderr)
-print("="*78, file=sys.stderr)
 print("• Core Architecture & Optimization : Orakul Studio (Roman Nikonov)", file=sys.stderr)
 print("• The magic of clean code          : Created to the sounds of war and constant shelling", file=sys.stderr)
 print("• Philosophy                       : Ostris created the brain. I taught it how to think.", file=sys.stderr)
@@ -23,7 +25,11 @@ print("  - Double-buffered async weight streaming (Zero OOM at rank 1024+)", fil
 print("  - CPU Pinned Memory pre-staging (Bypassing pagefile/swap)", file=sys.stderr)
 print("  - Hardware-level BF16/FP8 (E5M2) execution pipeline", file=sys.stderr)
 print("  - 100% Deterministic Checkpoint Resume (Anti-Stall & Zero Lottery)", file=sys.stderr)
-print("\n• Official Fork Hub:  https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork", file=sys.stderr)
+print(" Official Fork Hub: https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork", file=sys.stderr)
+print("="*78, file=sys.stderr)
+print("[VIKING NOTICE] If the cursor hangs below, the system is silently downloading", file=sys.stderr)
+print("                the  base weights to your cache.", file=sys.stderr)
+print("                Terminal is NOT frozen. Please wait, grab a coffee... ", file=sys.stderr)
 print("="*78 + "\n", file=sys.stderr)
 # ==============================================================================
 
