@@ -4,6 +4,19 @@
 *Server-class speed on consumer hardware*
 
 > Based on [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — the original author's work is the foundation of everything here. All original commits preserved.
+>
+> Why Orakul Studio is Windows-Native
+Many people are used to thinking that "serious" development and AI belong on Linux. But if you look under the hood of any popular operating system, you'll see an endless series of workarounds, emulation attempts, and compromises.
+
+We don't compromise.
+
+Hardware Performance: The Viking Engine is optimized for Windows not out of laziness, but because it provides direct, low-level access to the RTX 4090's resources without any slowdowns.
+
+Death to workarounds: Linux is beautiful when you're browsing the web. But when it comes to working with heavyweights, asynchronous memory streaming, and real computing resources, it turns into a patchwork of patches. We value our time and studio resources more than "pretty" fonts in the terminal.
+
+Unique Architecture: Our optimizations are the result of extensive work with the Ada Lovelace architecture. It works where it's supposed to—fast, predictable, and without surprises like broken drivers or incompatible libraries.
+
+Oracul Studio is designed for those who want to get things done, not just "administer" systems. Our base is Windows. Our goal is results. Anything else is just a waste of time.
 
 *Orakul Studio — Chernihiv, Ukraine 🇺🇦*
 
