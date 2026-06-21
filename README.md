@@ -3,7 +3,7 @@
 **High-performance LoRA training for Flux2 on RTX 4090**  
 *Server-class speed on consumer hardware*
 
-> Based on [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) — the original author's work is the foundation of everything here. All original commits preserved.
+> Based on [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) - the original author's work is the foundation of everything here. All original commits preserved.
 >
 > Why Orakul Studio is Windows Native
 Many people are used to thinking that "serious" development and AI belong on Linux. But if you look under the hood of any popular operating system, you'll see an endless series of workarounds, emulation attempts, and compromises.
