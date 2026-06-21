@@ -18,7 +18,7 @@ Unique Architecture: Our optimizations are the result of extensive work with the
 
 Oracul Studio is designed for those who want to get things done, not just "administer" systems. Our base is Windows. Our goal is results. Anything else is just a waste of time.
 
-*Orakul Studio — Chernihiv, Ukraine 🇺🇦*
+*Orakul Studio - Chernihiv, Ukraine 🇺🇦*
 
 ---
 
