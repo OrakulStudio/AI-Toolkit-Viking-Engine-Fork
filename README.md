@@ -17,6 +17,9 @@ Death to workarounds: Linux is beautiful when you're browsing the web. But when 
 Unique Architecture: Our optimizations are the result of extensive work with the Ada Lovelace architecture. It works where it's supposed to fast, predictable, and without surprises like broken drivers or incompatible libraries.
 
 Oracul Studio is designed for those who want to get things done, not just "administer" systems. Our base is Windows. Our goal is results. Anything else is just a waste of time.
+Linux is great for servers and clean code. But when you have two hours of daylight and need to run 200 steps to rank 1280, you don't care about a "proper kernel contract." You just want it to work.
+
+So yes, my code is written for Windows. And it runs. If anyone wants to port the Viking Engine to Linux, they're welcome, I'm not opposed. But for now, I'll stick with where it's less of a hassle and more rewarding.
 
 *Orakul Studio - Chernihiv, Ukraine 🇺🇦*
 
