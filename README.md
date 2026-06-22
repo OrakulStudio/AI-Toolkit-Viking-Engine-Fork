@@ -1,4 +1,4 @@
-# AI-Toolkit — Viking Engine Fork
+# AI-Toolkit - Viking Engine Fork
 
 **High-performance LoRA training for Flux2 on RTX 4090**  
 *Server-class speed on consumer hardware*
@@ -10,7 +10,7 @@ Many people are used to thinking that "serious" development and AI belong on Lin
 
 We don't compromise.
 
-Hardware Performance: The Viking Engine is optimized for Windows not out of laziness, but because it provides direct, low-level access to the RTX 4090's resources without any slowdowns.
+Hardware Performance: The Viking Engine is optimized for Windows not out of laziness, but because it provides direct, low level access to the RTX 4090's resources without any slowdowns.
 
 Death to workarounds: Linux is beautiful when you're browsing the web. But when it comes to working with heavyweights, asynchronous memory streaming, and real computing resources, it turns into a patchwork of patches. We value our time and studio resources more than "pretty" fonts in the terminal.
 
