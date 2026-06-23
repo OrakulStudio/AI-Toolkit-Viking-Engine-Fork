@@ -70,7 +70,7 @@ Not about making weak hardware work. About making strong hardware **fly**.
 
 ## Modified Files
 
-### [toolkit/manager_modules.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/memory_management/manager_modules.py) — Viking Engine
+### [toolkit/manager_modules.py](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/toolkit/memory_management/manager_modules.pyd) — Viking Engine
 **Double-buffered async weight streaming.**
 
 While GPU computes layer N, weights for layer N+1 transfer in a parallel CUDA stream. Transfer disappears from the profiler entirely.
