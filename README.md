@@ -70,17 +70,14 @@ Not about making weak hardware work. About making strong hardware **fly**.
 
 ## Modified Files
 
-### [toolkit/manager_modules.py](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/toolkit/memory_management/manager_modules.pyd) — Viking Engine
+### [toolkit/manager_modules.pyd](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/toolkit/memory_management/manager_modules.pyd) — Viking Engine
 **Double-buffered async weight streaming.**
 
 While GPU computes layer N, weights for layer N+1 transfer in a parallel CUDA stream. Transfer disappears from the profiler entirely.
 
 ```python
-# Ping-pong buffers + dedicated transfer stream
-with torch.cuda.stream(state["transfer_stream"]):
-    w = weight_cpu.to(device, non_blocking=True)  # async DMA
-    state["w_buffers"][idx] = _dequant(w, dtype)
-    state["forward_clk"] ^= 1                      # 0→1→0→1
+> 🔒 **Orakul Studio Proprietary Tech**  
+> Core architecture and high-performance memory optimization layers are closed-source. Distributed exclusively via compiled binary module. The repository is open, and the pipeline is fully functional and stable..
 ```
 
 Also: CPU pinned memory for direct DMA from DRAM without CPU cache copy.
