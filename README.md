@@ -54,7 +54,7 @@ Not about making weak hardware work. About making strong hardware **fly**.
 
 ---
 ## Benchmark — Flux2-dev, RTX 4090, Rank 128
-
+[orakul_report](https://github.com/OrakulStudio/AI-Toolkit-Windows11/tree/main/orakul_report)
 
 
 
