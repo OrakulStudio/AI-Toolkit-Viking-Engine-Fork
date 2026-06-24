@@ -55,12 +55,12 @@ Not about making weak hardware work. About making strong hardware **fly**.
 
 ### ⚡ Benchmark & Performance Verification (FLUX.2-Dev / RTX 4090)
 
-| LoRA Configuration | Speed (s/it) | VRAM Memory Status | Hardware Proof |
+| LoRA Configuration | Speed (s/it) | VRAM Memory Status | |
 | :--- | :--- | :--- | :--- |
-| **Rank 128 (Optimized)** | **6.70s / 6.50s** | 24 GB (Zero OOM / Stable) | |
-| **Rank 512 (Deep Gesture)** | **8.97s** | 24 GB (Double Buffered) | |
-| **Rank 1024 (Extreme)** | **22.45s** | 24 GB (Full 8-bit Stack Forced) | |
-| **Rank 1280 (Extreme)** | **65.80s** | 24 GB (Full 8-bit Stack Forced) | |
+| **Rank 128 (Optimized)** | **6.70s / 6.50s** | 24 GB (Zero OOM / Stable) | 
+| **Rank 512 (Deep Gesture)** | **8.97s** | 24 GB (Double Buffered) | 
+| **Rank 1024 (Extreme)** | **22.45s** | 24 GB (Full 8-bit Stack Forced) |
+| **Rank 1280 (Extreme)** | **65.80s** | 24 GB (Full 8-bit Stack Forced) | 
 
 ---
 ---
