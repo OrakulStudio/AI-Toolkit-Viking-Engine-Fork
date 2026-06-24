@@ -56,10 +56,10 @@ Not about making weak hardware work. About making strong hardware **fly**.
 
 | LoRA Configuration | Speed (s/it) | VRAM Memory Status 
 | :--- | :--- | :--- | :--- |
-| **Rank 128 (Optimized)**    | **6.70s / 6.50s** | 24 GB (Zero OOM / Stable)
-| **Rank 512 (Deep Gesture)** | **8.97s/it**      | 24 GB (Double Buffered) 
-| **Rank 1024 (Extreme)**     | **22.45s/it**     | 24 GB (Full 8-bit Stack Forced) 
-| **Rank 1280 (Extreme)**     | **65.80s/it**     | 24 GB (Full 8-bit Stack Forced)  
+| **Rank 128 (Optimized)**    | **6.70s / 6.50s** | 24 GB (Zero OOM / Stable) |
+| **Rank 512 (Deep Gesture)** | **8.97s/it**      | 24 GB (Double Buffered) |
+| **Rank 1024 (Extreme)**     | **22.45s/it**     | 24 GB (Full 8-bit Stack Forced) |
+| **Rank 1280 (Extreme)**     | **65.80s/it**     | 24 GB (Full 8-bit Stack Forced) | 
 
 ---
 ---
