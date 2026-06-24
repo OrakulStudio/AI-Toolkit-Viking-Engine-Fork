@@ -53,6 +53,10 @@ The original ai-toolkit is an excellent, flexible framework. This fork takes it 
 Not about making weak hardware work. About making strong hardware **fly**.
 
 ---
+## Benchmark — Flux2-dev, RTX 4090, Rank 128
+
+
+
 
 ## Benchmark — Flux2-dev, RTX 4090, Rank 512
 
