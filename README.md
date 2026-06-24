@@ -58,7 +58,7 @@ Not about making weak hardware work. About making strong hardware **fly**.
 <img width="3840" height="2160" alt="10" src="https://github.com/user-attachments/assets/b9e5c210-ac1a-4d96-b142-d0611de913f1" />
 <img width="3840" height="2160" alt="3" src="https://github.com/user-attachments/assets/c107b7e7-ed27-485b-a449-28507ba0afef" />
 <img width="3840" height="2160" alt="8" src="https://github.com/user-attachments/assets/ac55b44c-bb40-404c-99f7-ac6ba547469c" />
-
+[orakul_report.txt](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/orakul_report/orakul_report.txt)
 
 
 ## Benchmark - Flux2-dev, RTX 4090, Rank 512
