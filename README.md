@@ -33,11 +33,11 @@ This code was designed, rewritten, and optimized exclusively for directly runnin
 
 ### What breaks when running via the Web UI:
 
-1. Dynamic Alpha — DOESN'T WORK AT ALL**
+1. Dynamic Alpha  DOESN'T WORK AT ALL**
 * This repository implements dynamic Alpha recalculation logic for correct weight scaling (Scale = Alpha / Rank). For example, when working with high ranks (Rank 128, Rank 512, Rank 1024), the system automatically calculates a fair scale (down to Scale = 0.5000), allowing the model to deeply learn the structure and physics of the material.
 * **The web UI completely ignores this logic.** Almost all web wrappers under the hood forcibly overwrite this parameter and force a fixed Alpha = 16. At high ranks, this turns training into a dud: weight changes are suppressed, gradients tend to zero, the model visually "learns" without errors, but produces default output.
 
-2. **Asynchronous Memory Manager (Async CUDA Memory Manager) — CRASHED**
+2. **Asynchronous Memory Manager (Async CUDA Memory Manager)  CRASHED**
 * The logic for memory retention and low-level logging is optimized for the terminal's stdout.
 * Web interfaces attempt to intercept and parse the string stream for their browser consoles. At best, this leads to a crash of the backend interface due to custom security prints; at worst, to a hidden downcast of tensor precision and gradient castration, so that a casual user doesn't simply "get a memory error."
 
@@ -107,7 +107,7 @@ Also: CPU pinned memory for direct DMA from DRAM without CPU cache copy.
 **Native FP8 (E5M2) for Ada Lovelace + CPU pre-quantization.**
 
 RTX 4090 has native FP8 Tensor Cores. This activates them.  
-CPU pre-quantizes transformer blocks before GPU load — PCIe bus freed.
+CPU pre-quantizes transformer blocks before GPU load  PCIe bus freed.
 
 ```python
 "bf8": Float8WeightOnlyConfig(weight_dtype=torch.float8_e5m2)
@@ -121,7 +121,7 @@ CPU pre-quantizes transformer blocks before GPU load — PCIe bus freed.
 
 ---
 
-### [toolkit/lora_special.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/lora_special.py) — Viking Override
+### [toolkit/lora_special.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/lora_special.py)  Viking Override
 **LoRA matrices born in bfloat16, not converted later.**
 
 ```python
@@ -151,7 +151,7 @@ Lines that skipped `.alpha` keys for non-LoKR networks are permanently commented
 # === [ORACLE-60] BLOCK: ЗАЩИТА ОТ МЫЛА ===
 # These lines skipped Alpha for all types except LoKR.
 # At Rank 1024, signal dropped 64x (Scale 16/1024 instead of 64/1024).
-# KEEP DISABLED — lora_special.py autopilot handles this correctly.
+# KEEP DISABLED  lora_special.py autopilot handles this correctly.
 ```
 
 ---
